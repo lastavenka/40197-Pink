@@ -1,7 +1,7 @@
 # Проект «Pink»
 
 * Студент: [Наташа Ластовенко](https://htmlacademy.ru/profile/id40197).
-* Наставник: `Unknown`.
+* Наставник: [Николай Громов](https://htmlacademy.ru/profile/id6170).
 
 --
 
