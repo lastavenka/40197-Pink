@@ -1,135 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
     <title>PINK</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
 <body>
 
+    <header class="page-header">
+        <div class="page-header__wrap">
+            <a href="#" class="page-header__logo">PINK</a>
+            <a href="#" class="page-header__hamburger page-header__hamburger--close">
+                <span></span>
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li><a href="#">Информация</a>
+                </li>
+                <li><a href="#">Возможности</a>
+                </li>
+                <li><a href="#">Отзывы</a>
+                </li>
+                <li><a href="#">Стоимость</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="intro">
-        <div class="top-menu">
-            <div class="layout-center-wrapper">
-                <a class="logo">PINK</a>
-                <div class="hamburger">
-                    <div></div>
-                </div>
-            </div>
-        </div>
-        <ul class="mobile-menu">
-            <li>Информация</li>
-            <li>Возможности</li>
-            <li>Отзывы</li>
-            <li>Стоимость</li>
-        </ul>
-        <h2>Взгляните на жизнь<br>иначе!</h2>
+        <span class="intro__text">Взгляните на жизнь<br>иначе!</span>
     </div>
 
-    <div class="layout-center-wrapper">
-
-        <div class="download">
-            <a class="download-btn">Скачать приложение</a>
-            <a class="apple-btn"></a>
-            <a class="android-btn"></a>
-            <a class="ms-btn"></a>
-            <p>Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
+    <div class="download">
+        <div class="download-wrap">
+            <a href="#" class="download__link">Скачать приложение</a>
+            <a href="#" class="download__apple-link">Скачать в App Store</a>
+            <a href="#" class="download__android-link">Скачать в Google Play</a>
+            <a href="#" class="download__ms-link">Скачать в Windows Phone Store</a>
+            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, Mac OS, Windows 8</p>
         </div>
-
-        <div class="information">
-            <p class="promo-text">Устали от серости мегаполиса?</p>
-            <p class="promo-text">Нам есть что вам предложить!</p>
-            <ul class="features">
-                <li>
-                    <h3>Поднимает настроение</h3>
-                    <p class="feature-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                </li>
-                <li>
-                    <h3>Меняет мир вокруг</h3>
-                    <p class="feature-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </li>
-                <li>
-                    <h3>Заводит новых друзей</h3>
-                    <p class="feature-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="reviews">
-            <div class="review">
-                <h3>Николай Петров</h3>
-                <p class="review-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </div>
-            <div class="review">
-                <h3></h3>
-                <p class="review-text"></p>
-            </div>
-            <div class="review">
-                <h3></h3>
-                <p class="review-text"></p>
-            </div>
-            <ul class="slider-controls">
-                <li class="on"></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-
-        <div class="prices">
-            <table>
-                <tr>
-                    <th>
-                        <span class="price-plan">База</span>
-                        <span class="price">1,99 USD</span>
-                    </th>
-                    <th>
-                        <span class="price-plan">Стандарт</span>
-                        <span class="price">3,99 USD</span>
-                        <div class="flag flag-hit">хит</div>
-                    </th>
-                    <th>
-                        <span class="price-plan">Анлим</span>
-                        <span class="price">9,99 USD</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>Розовый фильтр</td>
-                    <td>Розовый фильтр</td>
-                    <td>Розовый фильтр</td>
-                </tr>
-                <tr>
-                    <td>Смайлики</td>
-                    <td>Смайлики</td>
-                    <td>Смайлики</td>
-                </tr>
-                <tr>
-                    <td>Комментарии</td>
-                    <td>Комментарии</td>
-                    <td>Комментарии</td>
-                </tr>
-            </table>
-            <ul class="slider-controls">
-                <li></li>
-                <li class="on"></li>
-                <li></li>
-            </ul>
-        </div>
-
-        <address>
-            <h2>Остались вопросы?<br>Свяжитесь с нами!</h2>
-            <h3>Звоните:</h3>
-            <a href="tel:+3758001000900">8 (800) 1000 900</a>
-            <h3>Пишите:</h3>
-            <a href="mailto:hello@pinkapp.ru">hello@pinkapp.ru</a>
-            <h3>Приезжайте в гости:</h3>
-            <span class="address">Санкт-Петербург,<br>Невский проспект, д. 20</span>
-        </address>
-
     </div>
 
-    <div class="map">
-        <div class="pin"></div>
+    <div class="information">
+        <div class="information-wrap">
+            <h1 class="information__header">Устали от серости мегаполиса?
+                <br>Нам есть что вам предложить!</h1>
+            <div class="features">
+                <section class="features__item">
+                    <h1>Поднимает настроение</h1>
+                    <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </section>
+                <section class="features__item">
+                    <h1>Меняет мир вокруг</h1>
+                    <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </section>
+                <section class="features__item">
+                    <h1>Заводит новых друзей</h1>
+                    <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                </section>
+            </div>
+        </div>
     </div>
+
+    <div class="reviews-slider">
+        <div class="reviews-wrap">
+            <div class="reviews-slider__item">
+                <span>Николай Петров</span>
+                <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+            </div>
+            <div class="reviews-slider__item">
+                <span></span>
+                <blockquote></blockquote>
+            </div>
+            <div class="reviews-slider__item">
+                <span></span>
+                <blockquote></blockquote>
+            </div>
+            <div class="reviews-slider__pagination">
+                <i class="reviews-slider__pagination-active"></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="price">
+        <table class="price__table">
+            <tr>
+                <th class="price__table-header">
+                    <span>База</span>
+                    <span>1,99 USD</span>
+                </th>
+                <th class="price__table-header">
+                    <span>Стандарт</span>
+                    <span>3,99 USD</span>
+                    <div class="price__table-flag">хит</div>
+                </th>
+                <th class="price__table-header">
+                    <span>Анлим</span>
+                    <span>9,99 USD</span>
+                </th>
+            </tr>
+            <tr>
+                <td class="price__table-cell">Розовый фильтр
+                    <span>да</span>
+                </td>
+                <td class="price__table-cell">Розовый фильтр
+                    <span>да</span>
+                </td>
+                <td class="price__table-cell">Розовый фильтр
+                    <span>да</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="price__table-cell">Смайлики
+                    <span>нет</span>
+                </td>
+                <td class="price__table-cell">Смайлики
+                    <span>да</span>
+                </td>
+                <td class="price__table-cell">Смайлики
+                    <span>да</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="price__table-cell">Комментарии
+                    <span>нет</span>
+                </td>
+                <td class="price__table-cell">Комментарии
+                    <span>нет</span>
+                </td>
+                <td class="price__table-cell">Комментарии
+                    <span>да</span>
+                </td>
+            </tr>
+        </table>
+        <div class="price__pagination">
+            <i></i>
+            <i class="price__pagination-active"></i>
+            <i></i>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="page-footer__contacts">
+            <p class="page-footer__contact-header">Остались вопросы?
+                <br>Свяжитесь с нами!</p>
+            <span class="page-footer__contact-text">Звоните:</span>
+            <a href="tel:+3758001000900" class="page-footer__contact-phone">8 (800) 1000 900</a>
+            <span class="page-footer__contact-text">Пишите:</span>
+            <a href="mailto:hello@pinkapp.ru" class="page-footer__contact-email">hello@pinkapp.ru</a>
+            <span class="page-footer__contact-text">Приезжайте в гости:</span>
+            <address>Санкт-Петербург,<br>Невский проспект, д. 20</address>
+            <div class="page-footer__contacts-map">
+                <div class="page-footer__map-pin"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="js/script.js"></script> -->
 
 </body>
 
