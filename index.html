@@ -18,14 +18,10 @@
         </div>
         <nav class="main-nav">
             <ul class="main-nav__list">
-                <li><a href="#">Информация</a>
-                </li>
-                <li><a href="#">Возможности</a>
-                </li>
-                <li><a href="#">Отзывы</a>
-                </li>
-                <li><a href="#">Стоимость</a>
-                </li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Возможности</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Стоимость</a></li>
             </ul>
         </nav>
     </header>
@@ -36,15 +32,15 @@
 
     <div class="download">
         <div class="download-wrap">
-            <a href="#" class="download__link">Скачать приложение</a>
+            <a href="#" class="download__btn">Скачать приложение</a>
             <a href="#" class="download__apple-link">Скачать в App Store</a>
             <a href="#" class="download__android-link">Скачать в Google Play</a>
-            <a href="#" class="download__ms-link">Скачать в Windows Phone Store</a>
+            <a href="#" class="download__win-mobile-link">Скачать в Windows Phone Store</a>
             <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, Mac OS, Windows 8</p>
         </div>
     </div>
 
-    <div class="information">
+    <section class="information">
         <div class="information-wrap">
             <h1 class="information__header">Устали от серости мегаполиса?
                 <br>Нам есть что вам предложить!</h1>
@@ -63,7 +59,7 @@
                 </section>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="reviews-slider">
         <div class="reviews-wrap">
@@ -89,54 +85,58 @@
 
     <div class="price">
         <table class="price__table">
-            <tr>
-                <th class="price__table-header">
-                    <span>База</span>
-                    <span>1,99 USD</span>
-                </th>
-                <th class="price__table-header">
-                    <span>Стандарт</span>
-                    <span>3,99 USD</span>
-                    <div class="price__table-flag">хит</div>
-                </th>
-                <th class="price__table-header">
-                    <span>Анлим</span>
-                    <span>9,99 USD</span>
-                </th>
-            </tr>
-            <tr>
-                <td class="price__table-cell">Розовый фильтр
-                    <span>да</span>
-                </td>
-                <td class="price__table-cell">Розовый фильтр
-                    <span>да</span>
-                </td>
-                <td class="price__table-cell">Розовый фильтр
-                    <span>да</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="price__table-cell">Смайлики
-                    <span>нет</span>
-                </td>
-                <td class="price__table-cell">Смайлики
-                    <span>да</span>
-                </td>
-                <td class="price__table-cell">Смайлики
-                    <span>да</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="price__table-cell">Комментарии
-                    <span>нет</span>
-                </td>
-                <td class="price__table-cell">Комментарии
-                    <span>нет</span>
-                </td>
-                <td class="price__table-cell">Комментарии
-                    <span>да</span>
-                </td>
-            </tr>
+            <thead>
+                <tr>
+                    <th class="price__table-header">
+                        <span>База</span>
+                        <span>1,99 USD</span>
+                    </th>
+                    <th class="price__table-header">
+                        <span>Стандарт</span>
+                        <span>3,99 USD</span>
+                        <div class="price__table-flag">хит</div>
+                    </th>
+                    <th class="price__table-header">
+                        <span>Анлим</span>
+                        <span>9,99 USD</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Розовый фильтр
+                        <span class="price__table-option--yes">да</span>
+                    </td>
+                    <td>Розовый фильтр
+                        <span class="price__table-option--yes">да</span>
+                    </td>
+                    <td>Розовый фильтр
+                        <span class="price__table-option--yes">да</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Смайлики
+                        <span class="price__table-option--yes">нет</span>
+                    </td>
+                    <td>Смайлики
+                        <span class="price__table-option--yes">да</span>
+                    </td>
+                    <td>Смайлики
+                        <span class="price__table-option--yes">да</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Комментарии
+                        <span class="price__table-option--no">нет</span>
+                    </td>
+                    <td>Комментарии
+                        <span class="price__table-option--no">нет</span>
+                    </td>
+                    <td>Комментарии
+                        <span class="price__table-option--yes">да</span>
+                    </td>
+                </tr>
+            </tbody>
         </table>
         <div class="price__pagination">
             <i></i>
@@ -150,14 +150,12 @@
             <p class="page-footer__contact-header">Остались вопросы?
                 <br>Свяжитесь с нами!</p>
             <span class="page-footer__contact-text">Звоните:</span>
-            <a href="tel:+3758001000900" class="page-footer__contact-phone">8 (800) 1000 900</a>
+            <a href="tel:88001000900" class="page-footer__contact-phone">8 (800) 1000 900</a>
             <span class="page-footer__contact-text">Пишите:</span>
             <a href="mailto:hello@pinkapp.ru" class="page-footer__contact-email">hello@pinkapp.ru</a>
             <span class="page-footer__contact-text">Приезжайте в гости:</span>
             <address>Санкт-Петербург,<br>Невский проспект, д. 20</address>
-            <div class="page-footer__contacts-map">
-                <div class="page-footer__map-pin"></div>
-            </div>
+            <div class="page-footer__contacts-map"></div>
         </div>
     </footer>
 
