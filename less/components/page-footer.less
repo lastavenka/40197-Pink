@@ -1,0 +1,47 @@
+//SVG-треугольник сделаю позже, после вебинара о SVG-графике
+
+.page-footer {
+    min-height: 331px;
+    padding-top: 49px;
+    padding-bottom: 35px;
+    
+    &__wrap {
+        width: 280px;
+        .wrapper;
+    }
+    
+    &__contacts {
+        position: relative;
+        .center;
+    
+        &-header {
+            margin-bottom: 35px;
+            font-size: 2.4rem;
+            .light;
+            line-height: 2.8rem;
+        }
+
+        &-text {
+            .block;
+            margin-top: 20px;
+            font-size: 1.8rem;
+            .bold;
+            line-height: normal;
+        }
+
+        &-phone,
+        &-email,
+        address,
+        &-phone:hover,
+        &-email:hover {
+            font-size: 2.4rem;
+            .light;
+            line-height: normal;
+            color: @dark-pink;
+        }
+        
+        &-map {
+            min-height: 219px;
+        } //Карта, как я понимаю, добавляется с помощью JS полностью, поэтому для нее только контейнер
+    }
+}

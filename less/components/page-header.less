@@ -1,0 +1,104 @@
+.page-header {
+    position: absolute;
+    width: 320px;
+    height: 66px;
+    background: @black-30;
+    
+    // Вид хедера при раскрытом меню main-nav (добавляется модификатор expand):
+    &--expand {
+        height: 69px;
+        border-bottom: 1px solid @black-blue;
+        background-color: @navi;
+    }
+    
+    &__wrap {
+        width: 280px;
+        .wrapper;
+        
+        &:after {
+            .clearfix();
+        }
+    }
+    
+    &__logo {
+        float: left;
+        margin: 19px 0 15px 0;
+        color: @white;
+        font-family: @font-logo;
+        font-size: 3.209rem;
+        line-height: 3.209rem;
+    }
+    
+    &__hamburger {
+        position: relative;
+        float: right;
+        margin: 31px 0;
+        cursor: pointer;
+        
+        span,
+        span:before,
+        span:after {
+            .block;
+            height: 3px;
+            width: 50px;
+            background: @white;
+            content: '';
+            border-radius: 1px;
+            transition: all 500ms ease-in-out;
+        }
+        
+        span:before {
+            position: absolute;
+            top: -10px;
+        }
+        
+        span:after {
+            position: absolute;
+            bottom: -10px;
+        }
+    }
+    
+    // Вид гамбургера изменяется добавлением модификатора active
+    &__hamburger--active {
+        
+        span {
+            background-color: transparent;
+            transition-delay: 250ms;
+        }
+        
+        span:before,
+        span:after {
+            top: 0;
+            right: 0;
+            width: 30px;
+        }
+        
+        span:before {
+            transform: rotate(45deg);
+        }
+        
+        span:after {
+            transform: rotate(-45deg);
+        }
+    }
+    
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        width: 320px;
+        min-height: 256px;
+        .center;
+        
+        li {
+            padding: 18px 0 16px 0;
+            border-top: 1px solid @grey-blue;
+            border-bottom: 1px solid @black-blue;
+            background-color: @navi;
+            .bold;
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.information {
+    min-height: 963px;
+    padding-top: 37px;
+    
+    &__wrap {
+        width: 280px;
+        .wrapper;
+    }
+    
+    &__header {
+        padding-bottom: 30px;
+        .center;
+        .light;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        
+        span {
+            .block;
+            margin-top: 30px;
+        }
+    }
+}
+
+.features {
+    position: relative;
+    min-height: 743px;
+    padding-top: 50px;
+    background: url("../img/TEMP-iphone-hi.png") 50% 108% no-repeat,
+                @grey-5;
+    overflow: hidden;
+    
+    &:before {
+        position: absolute;
+        top: -15px;
+        width: 320px;
+        height: 31px;
+        background: @white;
+        content: '';
+        transform: skewY(-5.6deg);
+    }
+    
+    &__wrap {
+        width: 280px;
+        .wrapper;
+    }
+    
+    &__item {
+        .center; 
+        
+        h1 {
+            margin: 35px 0 15px 0;
+            font-size: 1.8rem;
+            .bold;
+        }
+        
+        p {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+        }
+    }
+}

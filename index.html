@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>PINK</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
     <header class="page-header">
         <div class="page-header__wrap">
             <a href="#" class="page-header__logo">PINK</a>
-            <a href="#" class="page-header__hamburger page-header__hamburger--close">
+            <a href="#" class="page-header__hamburger">
                 <span></span>
             </a>
         </div>
@@ -27,24 +28,31 @@
     </header>
 
     <div class="intro">
-        <span class="intro__text">Взгляните на жизнь<br>иначе!</span>
+        <div class="intro__wrap">
+            <span class="intro__text">Взгляните на жизнь иначе!</span>
+        </div>
     </div>
 
     <div class="download">
-        <div class="download-wrap">
+        <div class="download__wrap">
             <a href="#" class="download__btn">Скачать приложение</a>
-            <a href="#" class="download__apple-link">Скачать в App Store</a>
-            <a href="#" class="download__android-link">Скачать в Google Play</a>
-            <a href="#" class="download__win-mobile-link">Скачать в Windows Phone Store</a>
+            <div class="download__link-wrap">
+                <a href="#" class="download__link download__link-apple">Скачать в App Store</a>
+                <a href="#" class="download__link download__link-android">Скачать в Google Play</a>
+                <a href="#" class="download__link download__link-win-mobile">Скачать в Windows Phone Store</a>
+            </div>
             <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, Mac OS, Windows 8</p>
         </div>
     </div>
 
     <section class="information">
-        <div class="information-wrap">
+        <div class="information__wrap">
             <h1 class="information__header">Устали от серости мегаполиса?
-                <br>Нам есть что вам предложить!</h1>
-            <div class="features">
+                <span>Нам есть что вам предложить!</span>
+            </h1>
+        </div>
+        <div class="features">
+            <div class="features__wrap">
                 <section class="features__item">
                     <h1>Поднимает настроение</h1>
                     <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -62,82 +70,90 @@
     </section>
 
     <div class="reviews-slider">
-        <div class="reviews-wrap">
+        <div class="reviews-slider__container">
             <div class="reviews-slider__item">
-                <span>Николай Петров</span>
-                <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                <div class="reviews-slider__item-wrap">
+                    <span>Николай Петров</span>
+                    <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                </div>
             </div>
-            <div class="reviews-slider__item">
-                <span></span>
-                <blockquote></blockquote>
+            <div class="reviews-slider__item-wrap">
+                <div class="reviews-slider__item-inner">
+                    <span>Николай Петров</span>
+                    <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                </div>
             </div>
-            <div class="reviews-slider__item">
-                <span></span>
-                <blockquote></blockquote>
+            <div class="reviews-slider__item-wrap">
+                <div class="reviews-slider__item-inner">
+                    <span>Николай Петров</span>
+                    <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                </div>
             </div>
-            <div class="reviews-slider__pagination">
-                <i class="reviews-slider__pagination-active"></i>
-                <i></i>
-                <i></i>
-            </div>
+        </div>
+        <div class="reviews-slider__pagination">
+            <i class="reviews-slider__pagination-active"></i>
+            <i></i>
+            <i></i>
         </div>
     </div>
 
     <div class="price">
-        <table class="price__table">
-            <thead>
-                <tr>
-                    <th class="price__table-header">
-                        <span>База</span>
-                        <span>1,99 USD</span>
-                    </th>
-                    <th class="price__table-header">
-                        <span>Стандарт</span>
-                        <span>3,99 USD</span>
-                        <div class="price__table-flag">хит</div>
-                    </th>
-                    <th class="price__table-header">
-                        <span>Анлим</span>
-                        <span>9,99 USD</span>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Розовый фильтр
-                        <span class="price__table-option--yes">да</span>
-                    </td>
-                    <td>Розовый фильтр
-                        <span class="price__table-option--yes">да</span>
-                    </td>
-                    <td>Розовый фильтр
-                        <span class="price__table-option--yes">да</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Смайлики
-                        <span class="price__table-option--yes">нет</span>
-                    </td>
-                    <td>Смайлики
-                        <span class="price__table-option--yes">да</span>
-                    </td>
-                    <td>Смайлики
-                        <span class="price__table-option--yes">да</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Комментарии
-                        <span class="price__table-option--no">нет</span>
-                    </td>
-                    <td>Комментарии
-                        <span class="price__table-option--no">нет</span>
-                    </td>
-                    <td>Комментарии
-                        <span class="price__table-option--yes">да</span>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="price__wrap">
+            <table class="price__table">
+                <thead>
+                    <tr>
+                        <th class="price__table-header">
+                            <span>База</span>
+                            <span>1,99 USD</span>
+                        </th>
+                        <th class="price__table-header">
+                            <span>Стандарт</span>
+                            <div class="price__table-flag">хит</div>
+                            <span>3,99 USD</span>
+                        </th>
+                        <th class="price__table-header">
+                            <span>Анлим</span>
+                            <span>9,99 USD</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Розовый фильтр
+                            <span class="price__table-option--yes">да</span>
+                        </td>
+                        <td>Розовый фильтр
+                            <span class="price__table-option--yes">да</span>
+                        </td>
+                        <td>Розовый фильтр
+                            <span class="price__table-option--yes">да</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Смайлики
+                            <span class="price__table-option--no">нет</span>
+                        </td>
+                        <td>Смайлики
+                            <span class="price__table-option--yes">да</span>
+                        </td>
+                        <td>Смайлики
+                            <span class="price__table-option--yes">да</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Комментарии
+                            <span class="price__table-option--no">нет</span>
+                        </td>
+                        <td>Комментарии
+                            <span class="price__table-option--no">нет</span>
+                        </td>
+                        <td>Комментарии
+                            <span class="price__table-option--yes">да</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div class="price__pagination">
             <i></i>
             <i class="price__pagination-active"></i>
@@ -146,17 +162,18 @@
     </div>
 
     <footer class="page-footer">
-        <div class="page-footer__contacts">
-            <p class="page-footer__contact-header">Остались вопросы?
-                <br>Свяжитесь с нами!</p>
-            <span class="page-footer__contact-text">Звоните:</span>
-            <a href="tel:88001000900" class="page-footer__contact-phone">8 (800) 1000 900</a>
-            <span class="page-footer__contact-text">Пишите:</span>
-            <a href="mailto:hello@pinkapp.ru" class="page-footer__contact-email">hello@pinkapp.ru</a>
-            <span class="page-footer__contact-text">Приезжайте в гости:</span>
-            <address>Санкт-Петербург,<br>Невский проспект, д. 20</address>
-            <div class="page-footer__contacts-map"></div>
+        <div class="page-footer__wrap">
+            <div class="page-footer__contacts">
+                <p class="page-footer__contacts-header">Остались вопросы? Свяжитесь с нами!</p>
+                <span class="page-footer__contacts-text">Звоните:</span>
+                <a href="tel:88001000900" class="page-footer__contacts-phone">8 (800) 1000 900</a>
+                <span class="page-footer__contacts-text">Пишите:</span>
+                <a href="mailto:hello@pinkapp.ru" class="page-footer__contacts-email">hello@pinkapp.ru</a>
+                <span class="page-footer__contacts-text">Приезжайте в гости:</span>
+                <address>Санкт-Петербург, Невский проспект, д. 20</address>
+            </div>
         </div>
+        <div class="page-footer__contacts-map"></div>
     </footer>
 
     <!-- <script src="js/script.js"></script> -->
