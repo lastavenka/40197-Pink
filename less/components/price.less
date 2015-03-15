@@ -3,7 +3,7 @@
     min-height: 331px;
     padding-top: 93px;
     padding-bottom: 46px;
-    background: @grey-5;
+    background: @grey-f2;
     overflow: hidden;
     
     &:before {
@@ -17,144 +17,142 @@
     }
     
     &__wrap {
-        width: 280px;
         .wrapper;
     }
+}
     
-    &__table {
+.price__table {
+    position: absolute;
+    left: -260px;
+    width: 840px;
+    border: 2px solid @grey-e5;
+    border-top: 0;
+    border-collapse: collapse;
+
+    &-flag {
         position: absolute;
-        left: -260px;
-        width: 840px;
-        border: 2px solid @grey-10;
-        border-top: 0;
-        border-collapse: collapse;
-        
-        &-header {
-            position: relative;
-            padding: 19px 0 22px 0;
-            border: 2px solid @grey-10;
-            border-top: 0;
-            color: @white;
-            background-color: @navi;
-            
-            span:first-child {
-                .block;
-                font-size: 1.8rem;
-                line-height: 3rem;
-                .bold;
-                text-transform: uppercase;
-            }
-            
-            span:last-child {
-                .block;
-                font-size: 2.4rem;
-                line-height: 3rem;
-                .light;
-            }
-        }
-        
-        &-flag {
-            position: absolute;
-            top: 0;
-            left: -2px;
-            width: 74px;
-            height: 73px;
-            .hidden-text;
-            background: url("../img/flag-price__table.png") no-repeat;
-        }
-        
-        td {
-            position: relative;
-            padding: 14px 0 14px 22px;
-            border: 2px solid @grey-10;
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            line-height: 3rem;
-            background-color: @white;
-        }
-            
-        &-option--yes {
-            position: absolute;
-            bottom: 17px;
-            right: 18px;
-            width: 32px;
-            height: 32px;
-            .hidden-text;
-            }
-        
-        &-option--yes:before,
-        &-option--yes:after {
-            position: absolute;
-            height: 3px;
-            background-color: @green;
-            border-radius: 2px;
-            content: '';
-        }
-        
-        &-option--yes:before {
-            top: 18px;
-            right: -4px;
-            width: 30px;
-            transform: rotate(-45deg);
-        }
-        
-        &-option--yes:after {
-            top: 24px;
-            right: 18px;
-            width: 15px;
-            transform: rotate(45deg);
-        }
-        
-        &-option--no {
-            position: absolute;
-            bottom: 15px;
-            right: 20px;
-            width: 29px;
-            height: 27px;
-            .hidden-text;
-        }
-        
-        &-option--no:before,
-        &-option--no:after {
-            position: absolute;
-            top: 12px;
-            right: -3px;
-            width: 35px;
-            height: 3px;
-            background-color: @orange;
-            border-radius: 2px;
-            content: '';
-        }
-        
-        &-option--no:before {
-            transform: rotate(45deg);
-        }
-        
-        &-option--no:after {
-            transform: rotate(-45deg);
-        }
+        top: 0;
+        left: -2px;
+        width: 74px;
+        height: 73px;
+        .hidden-text;
+        background: url("../img/flag-price__table.png") no-repeat;
     }
-    
-    &__pagination {
-        margin-top: 320px;
-        .center;
-        font-size: 0;
-        
-        i {
-            .i-block;
-            width: 6px;
-            height: 6px;
-            margin-right: 13px;
-            border: 3px solid @grey-5;
-            background-color: #bec2c7;
-            cursor: pointer;
-            border-radius: 50%;
-        }
-        
-        i.price__pagination-active {
-            border: 3px solid @navi;
-            background-color: @white;
-        }
+
+    td {
+        position: relative;
+        padding: 14px 0 14px 22px;
+        border: 2px solid @grey-e5;
+        font-size: @font-size-base;
+        text-transform: uppercase;
+        line-height: @line-height-base + .6;
+        background-color: @white;
     }
+}
+
+.price__table-header {
+    position: relative;
+    padding: 19px 0 22px 0;
+    border: 2px solid @grey-e5;
+    border-top: 0;
+    color: @white;
+    background-color: @navi;
+
+    span:first-child {
+        display: block;
+        font-size: @font-size-base + .4;
+        line-height: @line-height-base + .6;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    span:last-child {
+        display: block;
+        font-size: @font-size-base + 1;
+        line-height: @line-height-base + .6;
+        font-weight: 300;
+    }
+}
+
+.price__pagination {
+    margin-top: 320px;
+    text-align: center;
+    font-size: 0;
+
+    i {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        margin-right: 13px;
+        border: 3px solid @grey-f2;
+        background-color: #bec2c7;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    i.price__pagination-active {
+        border: 3px solid @navi;
+        background-color: @white;
+    }
+}
+
+.option-yes {
+    position: absolute;
+    bottom: 17px;
+    right: 18px;
+    width: 32px;
+    height: 32px;
+    .hidden-text;
     
+    &:before,
+    &:after {
+        position: absolute;
+        height: 3px;
+        background-color: @green;
+        border-radius: 2px;
+        content: '';
+    }
+
+    &:before {
+        top: 18px;
+        right: -4px;
+        width: 30px;
+        transform: rotate(-45deg);
+    }
+
+    &:after {
+        top: 24px;
+        right: 18px;
+        width: 15px;
+        transform: rotate(45deg);
+    }
+}
+
+.option-no {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    width: 29px;
+    height: 27px;
+    .hidden-text;
+
+    &:before,
+    &:after {
+        position: absolute;
+        top: 12px;
+        right: -3px;
+        width: 35px;
+        height: 3px;
+        background-color: @orange;
+        border-radius: 2px;
+        content: '';
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
 }

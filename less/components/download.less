@@ -1,66 +1,65 @@
 .download {
     min-height: 243px;
     padding-top: 28px;
+    padding-bottom: 26px;
     background-color: @dark-blue;
     
     &__wrap {
-        width: 280px;
         .wrapper;
     }
     
     &__btn {
-        .block;
+        display: block;
         margin-bottom: 31px;
-        padding: 15.5px 0;
+        padding: 15px 0;
         border: 3px solid @white;
-        .bold;
-        font-size: 1.8rem;
-        line-height: 1.8rem;
-        .center;
+        font-weight: bold;
+        font-size: @font-size-base + .4;
+        line-height: @line-height-base - .6;
+        text-align: center;
         border-radius: 50px;
     }
     
-    &__link-wrap {
-        width: 205px;
+    &__text {
+        margin: 0;
+        text-align: center;
+        color: @white;
+        font-weight: 300;
+    }
+}
+    
+.download__link {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    vertical-align: bottom;
+    .hidden-text;
+    
+    &-wrap {
         .wrapper;
         font-size: 0;
+        text-align: center;
     }
-    
-    &__link {
-        .i-block;
-        margin-right: 30.5px;
-        margin-bottom: 25px;
-        vertical-align: bottom;
-        .hidden-text;
         
-        &-apple {
-            width: 46px;
-	        height: 57px;
-            .sprite;
-            background-position: 0 0;
-        }
-        
-        &-android {
-            width: 42px;
-	        height: 47px;
-            .sprite;
-            background-position: -73px -4px;
-        }
-        
-        &-win-mobile {
-            width: 44px;
-	        height: 42px;
-            .sprite;
-            margin-right: 0;
-            background-position: -148px -5px;
-        }
+    &--apple {
+        width: 46px;
+        height: 57px;
+        .sprite;
+        background-position: 0 0;
     }
-    
-    &__text {
-        .center;
-        font-size: 1.4rem;
-        color: @white;
-        line-height: 2.4rem;
-        .light;
+        
+    &--android {
+        width: 42px;
+        height: 47px;
+        .sprite;
+        background-position: -73px -4px;
+    }
+        
+    &--win-mobile {
+        width: 44px;
+        height: 42px;
+        .sprite;
+        margin-right: 0;
+        background-position: -148px -5px;
     }
 }

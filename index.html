@@ -4,19 +4,21 @@
 <head>
     <meta charset="utf-8">
     <title>PINK</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header class="page-header">
-        <div class="page-header__wrap">
-            <a href="#" class="page-header__logo">PINK</a>
-            <a href="#" class="page-header__hamburger">
-                <span></span>
-            </a>
+        <div class="top-header">
+            <div class="top-header__wrap">
+                <a href="#" class="top-header__logo">PINK</a>
+                <a href="#" class="top-header__hamburger">
+                    <span></span>
+                </a>
+            </div>
         </div>
+
         <nav class="main-nav">
             <ul class="main-nav__list">
                 <li><a href="#">Информация</a></li>
@@ -25,21 +27,21 @@
                 <li><a href="#">Стоимость</a></li>
             </ul>
         </nav>
-    </header>
 
-    <div class="intro">
-        <div class="intro__wrap">
-            <span class="intro__text">Взгляните на жизнь иначе!</span>
+        <div class="intro">
+            <div class="intro__wrap">
+                <span class="intro__text">Взгляните на жизнь иначе!</span>
+            </div>
         </div>
-    </div>
+    </header>
 
     <div class="download">
         <div class="download__wrap">
             <a href="#" class="download__btn">Скачать приложение</a>
             <div class="download__link-wrap">
-                <a href="#" class="download__link download__link-apple">Скачать в App Store</a>
-                <a href="#" class="download__link download__link-android">Скачать в Google Play</a>
-                <a href="#" class="download__link download__link-win-mobile">Скачать в Windows Phone Store</a>
+                <a href="#" class="download__link download__link--apple">Скачать в App Store</a>
+                <a href="#" class="download__link download__link--android">Скачать в Google Play</a>
+                <a href="#" class="download__link download__link--win-mobile">Скачать в Windows Phone Store</a>
             </div>
             <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, Mac OS, Windows 8</p>
         </div>
@@ -47,7 +49,8 @@
 
     <section class="information">
         <div class="information__wrap">
-            <h1 class="information__header">Устали от серости мегаполиса?
+            <h1 class="information__header">
+               <span>Устали от серости мегаполиса?</span>
                 <span>Нам есть что вам предложить!</span>
             </h1>
         </div>
@@ -77,14 +80,14 @@
                     <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
                 </div>
             </div>
-            <div class="reviews-slider__item-wrap">
-                <div class="reviews-slider__item-inner">
+            <div class="reviews-slider__item">
+                <div class="reviews-slider__item-wrap">
                     <span>Николай Петров</span>
                     <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
                 </div>
             </div>
-            <div class="reviews-slider__item-wrap">
-                <div class="reviews-slider__item-inner">
+            <div class="reviews-slider__item">
+                <div class="reviews-slider__item-wrap">
                     <span>Николай Петров</span>
                     <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
                 </div>
@@ -120,35 +123,35 @@
                 <tbody>
                     <tr>
                         <td>Розовый фильтр
-                            <span class="price__table-option--yes">да</span>
+                            <span class="option-yes">да</span>
                         </td>
                         <td>Розовый фильтр
-                            <span class="price__table-option--yes">да</span>
+                            <span class="option-yes">да</span>
                         </td>
                         <td>Розовый фильтр
-                            <span class="price__table-option--yes">да</span>
+                            <span class="option-yes">да</span>
                         </td>
                     </tr>
                     <tr>
                         <td>Смайлики
-                            <span class="price__table-option--no">нет</span>
+                            <span class="option-no">нет</span>
                         </td>
                         <td>Смайлики
-                            <span class="price__table-option--yes">да</span>
+                            <span class="option-yes">да</span>
                         </td>
                         <td>Смайлики
-                            <span class="price__table-option--yes">да</span>
+                            <span class="option-yes">да</span>
                         </td>
                     </tr>
                     <tr>
                         <td>Комментарии
-                            <span class="price__table-option--no">нет</span>
+                            <span class="option-no">нет</span>
                         </td>
                         <td>Комментарии
-                            <span class="price__table-option--no">нет</span>
+                            <span class="option-no">нет</span>
                         </td>
                         <td>Комментарии
-                            <span class="price__table-option--yes">да</span>
+                            <span class="option-yes">да</span>
                         </td>
                     </tr>
                 </tbody>
