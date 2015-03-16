@@ -8,40 +8,40 @@
     &__wrap {
         .wrapper;
     }
-}
     
-.page-footer__contacts {
+&__contacts {
     position: relative;
     text-align: center;
+}
 
-    &-header {
-        margin-bottom: 35px;
-        font-size: @font-size-base + 1;
-        font-weight: 300;
-        line-height: @line-height-base + .4;
-    }
+&__contacts-header {
+    margin-bottom: 35px;
+    font-size: @font-size-base + 1;
+    font-weight: 300;
+    line-height: @line-height-base + .4;
+}
 
-    &-text {
-        display: block;
-        margin-top: 20px;
-        font-size: @font-size-base + .4;
-        font-weight: bold;
-        line-height: normal;
-    }
+&__contacts-text {
+    display: block;
+    margin-top: 20px;
+    font-size: @font-size-base + .4;
+    font-weight: bold;
+    line-height: normal;
+}
 
-    &-phone,
-    &-email,
-    address,
-    &-phone:hover,
-    &-email:hover {
-        font-size: @font-size-base + 1;
-        font-weight: 300;
-        line-height: normal;
-        color: @dark-pink;
-        font-style: normal;
-    }
+&__contacts-phone,
+&__contacts-email,
+address,
+&__contacts-phone:hover,
+&__contacts-email:hover {
+    font-size: @font-size-base + 1;
+    font-weight: 300;
+    line-height: normal;
+    color: @dark-pink;
+    font-style: normal;
+}
 
-    &-map {
-        min-height: 219px;
-    } //Карта, как я понимаю, добавляется с помощью JS полностью, поэтому для нее только контейнер
+&__contacts-map {
+    min-height: 219px;
+} //Карта, как я понимаю, добавляется с помощью JS полностью, поэтому для нее только контейнер
 }
