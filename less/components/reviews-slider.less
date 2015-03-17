@@ -1,18 +1,22 @@
 .reviews-slider {
-    width: 320px;
-    min-height: 313px;
+    min-width: 320px;
+    max-width: 700px;
     padding-top: 43px;
     font-size: 0;
-    overflow: hidden;
+    
+    &__wrap {
+        overflow: hidden;
+        margin: 0 auto;
+    }
     
     &__container {
-        width: 960px;
+        width: 300%;
     }
 }
     
 .reviews-slider__item {
     display: inline-block;
-    width: 320px;
+    width: 33%;
     text-align: center;
 
     &-wrap {
@@ -35,6 +39,7 @@
 
 .reviews-slider__pagination {
     margin-top: 33px;
+    margin-bottom: 44px;
     text-align: center;
     font-size: 0;
 

@@ -1,5 +1,6 @@
 .information {
-    min-height: 963px;
+    min-width: 320px;
+    max-width: 700px;
     padding-top: 7px;
     
     &__wrap {
@@ -22,21 +23,19 @@
 
 .features {
     position: relative;
-    min-height: 735px;
     padding-top: 50px;
-    background: url("../img/TEMP-iphone-hi.png") 50% bottom no-repeat,
-                @grey-f2;
+    background: @grey-f2;
     overflow: hidden;
     
     &:before {
         position: absolute;
-        top: -15px;
-        width: 320px;
-        height: 31px;
+        top: -50px;
+        width: 100%;
+        height: 70px;
         background: @white;
         content: '';
         transform: skewY(-5.6deg);
-    }
+    } // В резиновой верстке уголки с помощью псевдоэлементов не прокатили. Буду делать SVG
     
     &__wrap {
         .wrapper;
@@ -50,5 +49,11 @@
         margin: 28px 0 5px 0;
         font-size: @font-size-h1 - .6;
         font-weight: bold;
+    }
+    
+    &__image {
+        height: 278px;
+        margin-top: 33px;
+        background: url("../img/TEMP-iphone-hi.png") 50% bottom no-repeat;
     }
 }
