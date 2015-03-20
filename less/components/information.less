@@ -38,6 +38,8 @@
     
     &__wrap {
         .wrapper;
+        display: flex;
+        flex-direction: column;
     }
     
     &__item {
@@ -54,5 +56,45 @@
         height: 278px;
         margin-top: 33px;
         background: url("../img/TEMP-iphone-hi.png") 50% bottom no-repeat;
+    }
+}
+
+@media(min-width: 700px) and (max-width: 1200px) {
+    
+    .information__header {
+        padding-bottom: 0;
+        font-size: @font-size-h1 + 1.6;
+        line-height: @line-height-base + 2.6;
+        
+        span:last-child {
+            margin-top: 0;
+            padding: 0 23%;
+        }
+    }
+    
+    .features {
+    
+        &__wrap {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__content {
+            width: 50%;
+            padding-top: 40px;
+            order: 2;
+        }
+
+        &__item {
+            text-align: left;
+        }
+
+        &__image {
+            width: 43%;
+            height: 482px;
+            margin: 0;
+            background: url("../img/TEMP-iphone-hi-700.png") center bottom no-repeat;
+            order: 1;
+        }
     }
 }

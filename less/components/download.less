@@ -66,3 +66,33 @@
         background-position: -148px -5px;
     }
 }
+
+@media(min-width: 700px) and (max-width: 1200px) {
+    
+    .download {
+        position: absolute;
+        top: 350px;
+        width: 55%;
+        background: none;
+        
+        &__wrap {
+            padding: 0 11%;
+        }
+        
+        &__btn {
+            margin-bottom: 45px;
+        }
+    }
+        
+    .download__link {
+        margin-right: 36px;
+
+        &--win-mobile {
+            margin-right: 0;
+        }
+    }
+
+    .download__text {
+        font-size: @font-size-base + .4;
+    }
+}

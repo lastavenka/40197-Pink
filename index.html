@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PINK</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +13,10 @@
     <header class="page-header">
         <div class="top-header">
             <div class="top-header__wrap">
-                <a href="#" class="top-header__logo">PINK</a>
+                <div class="top-header__logo">
+                    <a href="#" class="top-header__logo-image"></a>
+                    <a href="#" class="top-header__logo-text">PINK</a>
+                </div>
                 <a href="#" class="top-header__hamburger">
                     <span></span>
                 </a>
@@ -59,41 +63,58 @@
         </div>
         <div class="features">
             <div class="features__wrap">
-                <section class="features__item">
-                    <h1>Поднимает настроение</h1>
-                    <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                </section>
-                <section class="features__item">
-                    <h1>Меняет мир вокруг</h1>
-                    <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </section>
-                <section class="features__item">
-                    <h1>Заводит новых друзей</h1>
-                    <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-                </section>
+                <div class="features__content">
+                    <section class="features__item">
+                        <h1>Поднимает настроение</h1>
+                        <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                    </section>
+                    <section class="features__item">
+                        <h1>Меняет мир вокруг</h1>
+                        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                    </section>
+                    <section class="features__item">
+                        <h1>Заводит новых друзей</h1>
+                        <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                    </section>
+                </div>
                 <div class="features__image"></div>
             </div>
         </div>
     </section>
+
+    <div class="effect">
+        <div class="effect__wrap">
+            <div class="effect__image"></div>
+            <section class="effect__content">
+                <h1 class="effect__header">Эффект<br>на 24 часа!</h1>
+                <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+                </p>
+                <a class="effect__more-link">Узнать больше об исследовании</a>
+            </section>
+        </div>
+    </div>
 
     <div class="reviews-slider">
         <div class="reviews-slider__wrap">
             <div class="reviews-slider__container">
                 <div class="reviews-slider__item">
                     <div class="reviews-slider__item-wrap">
-                        <span>Николай Петров</span>
+                        <span class="reviews-slider__item-header">Николай Петров</span>
+                        <span class="reviews-slider__item-subheader">25 лет, водитель трамвая</span>
                         <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
                     </div>
                 </div>
                 <div class="reviews-slider__item">
                     <div class="reviews-slider__item-wrap">
-                        <span>Николай Петров</span>
+                        <span class="reviews-slider__item-header">Николай Петров</span>
+                        <span class="reviews-slider__item-subheader">25 лет, водитель трамвая</span>
                         <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
                     </div>
                 </div>
                 <div class="reviews-slider__item">
                     <div class="reviews-slider__item-wrap">
-                        <span>Николай Петров</span>
+                        <span class="reviews-slider__item-header">Николай Петров</span>
+                        <span class="reviews-slider__item-subheader">25 лет, водитель трамвая</span>
                         <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
                     </div>
                 </div>
@@ -111,6 +132,7 @@
             <table class="price__table">
                 <thead>
                     <tr>
+                        <th class="price__table-header"></th>
                         <th class="price__table-header">
                             <span>База</span>
                             <span>1,99 USD</span>
@@ -128,35 +150,53 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Розовый фильтр
+                        <td>
+                            <span>Розовый фильтр</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Розовый фильтр</span>
                             <span class="option-yes">да</span>
                         </td>
-                        <td>Розовый фильтр
+                        <td>
+                            <span class="price__table-data">Розовый фильтр</span>
                             <span class="option-yes">да</span>
                         </td>
-                        <td>Розовый фильтр
-                            <span class="option-yes">да</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Смайлики
-                            <span class="option-no">нет</span>
-                        </td>
-                        <td>Смайлики
-                            <span class="option-yes">да</span>
-                        </td>
-                        <td>Смайлики
+                        <td>
+                            <span class="price__table-data">Розовый фильтр</span>
                             <span class="option-yes">да</span>
                         </td>
                     </tr>
                     <tr>
-                        <td>Комментарии
+                        <td>
+                            <span>Смайлики</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Смайлики</span>
                             <span class="option-no">нет</span>
                         </td>
-                        <td>Комментарии
+                        <td>
+                            <span class="price__table-data">Смайлики</span>
+                            <span class="option-yes">да</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Смайлики</span>
+                            <span class="option-yes">да</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Комментарии</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Комментарии</span>
                             <span class="option-no">нет</span>
                         </td>
-                        <td>Комментарии
+                        <td>
+                            <span class="price__table-data">Комментарии</span>
+                            <span class="option-no">нет</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Комментарии</span>
                             <span class="option-yes">да</span>
                         </td>
                     </tr>
@@ -173,13 +213,13 @@
     <footer class="page-footer">
         <div class="page-footer__wrap">
             <div class="page-footer__contacts">
-                <p class="page-footer__contacts-header">Остались вопросы? Свяжитесь с нами!</p>
-                <span class="page-footer__contacts-text">Звоните:</span>
-                <a href="tel:88001000900" class="page-footer__contacts-phone">8 (800) 1000 900</a>
-                <span class="page-footer__contacts-text">Пишите:</span>
+                <p class="page-footer__contacts-header">Остались вопросы?<br>Свяжитесь с нами!</p>
+                <span class="page-footer__contacts-text page-footer__contacts-text--phone">Звоните:</span>
+                <a href="tel:88001000900" class="page-footer__contacts-phone">8&nbsp;(800)&nbsp;1000&nbsp;900</a>
+                <span class="page-footer__contacts-text page-footer__contacts-text--email">Пишите:</span>
                 <a href="mailto:hello@pinkapp.ru" class="page-footer__contacts-email">hello@pinkapp.ru</a>
-                <span class="page-footer__contacts-text">Приезжайте в гости:</span>
-                <address>Санкт-Петербург, Невский проспект, д. 20</address>
+                <span class="page-footer__contacts-text page-footer__contacts-text--address">Приезжайте в гости:</span>
+                <address>Санкт-Петербург,<br>Невский проспект, д. 20</address>
             </div>
         </div>
         <div class="page-footer__contacts-map"></div>
