@@ -6,18 +6,17 @@
 .top-header {
     position: absolute;
     width: 100%;
+    padding: 20px 0;
     background: @grey-00--a30;
     
     // Вид .top-header при раскрытом меню main-nav (добавляется модификатор expand):
     &--expand {
-        min-height: 69px;
         border-bottom: 1px solid @black-blue;
         background-color: @navi;
     }
     
     &__wrap {
         .wrapper;
-        min-height: 66px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -34,7 +33,16 @@
         color: @white;
         font-family: "GothamRounded-Book", Arial, sans-serif;
         font-size: @font-size-base + 1.8;
-        line-height: @line-height-base + .8;
+        
+        &:hover,
+        &:visited,
+        &:focus {
+            color: @white;
+        }
+            
+        &:active {
+            opacity: .3;
+        }
     }
     
     &-image {
@@ -45,6 +53,7 @@
 .top-header__hamburger {
     position: relative;
     cursor: pointer;
+    transition: all 500ms ease-in-out;
 
     span,
     span:before,
@@ -55,7 +64,6 @@
         background: @white;
         content: '';
         border-radius: 1px;
-        transition: all 500ms ease-in-out;
     }
 
     span:before {
@@ -67,6 +75,19 @@
         position: absolute;
         bottom: -10px;
     }
+    
+    &:hover span,
+    &:hover span:before,
+    &:hover span:after {
+        background-color: @dark-pink;
+    }
+    
+    &:active span,
+    &:active span:before,
+    &:active span:after {
+        background-color: @dark-pink;
+        opacity: .3;
+    }
 }
 
 // Вид гамбургера изменяется добавлением модификатора active
@@ -74,7 +95,11 @@
 
     span {
         background-color: transparent;
-        transition-delay: 250ms;
+        
+        &:hover,
+        &:active {
+            background-color: transparent;
+        }
     }
 
     span:before,
@@ -101,6 +126,7 @@
     min-height: 256px;
     text-align: center;
     list-style: none;
+    z-index: 100;
     
     &__list {
         margin: 0;
@@ -116,6 +142,17 @@
         line-height: @line-height-base + .8;
         text-transform: uppercase;
         background-color: @navi;
+    }
+    
+    a {
+
+        &:hover {
+            color: @dark-pink;
+        }
+
+        &:active {
+            opacity: .3;
+        }
     }
 }
     
@@ -142,18 +179,28 @@
 
 @media(min-width: 700px) and (max-width: 1200px) {
     
-    .top-header__logo {
+    .top-header {
+        padding: 30px 0 32px 0;
         
-        &-image {
-            display: inline-block;
-            width: 59px;
-            height: 40px;
-            background: url("../img/logo__header.png");
+        &__logo-text:active {
+            opacity: .3;
         }
-    }
     
-    .top-header__wrap {
-        min-height: 110px;
+        &__logo-image {
+                display: inline-block;
+                width: 59px;
+                height: 40px;
+                background: url("../img/logo__white.png");
+            
+            &:hover {
+                background: url("../img/logo__pink.png")
+            }
+            
+            &:active {
+                background: url("../img/logo__white.png");
+                opacity: .3;
+            }
+        }
     }
     
     .main-nav {
@@ -166,8 +213,7 @@
 
         &__wrap {
             width: 26%;
-            padding: 0 15%;
-            text-align: center;
+            padding: 0 14%;
         }
 
         &__text {
@@ -182,6 +228,99 @@
             width: 67%;
             height: 545px;
             background: url("../img/TEMP-hand_with_iphone-700.png") center bottom no-repeat; 
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    
+    .top-header {
+        padding: 27px 0 43px 0;
+        
+        &--expand {
+            background: none;
+        }
+        
+        &__wrap {
+            padding: 0 11%;
+        }
+    
+        &__logo {
+
+            &-image {
+                display: inline-block;
+                width: 59px;
+                height: 40px;
+                background: url("../img/logo__white-1200.png");
+            }
+        }
+        
+        &__hamburger,
+        &__hamburger--active {
+            display: none;
+        }
+    }
+    
+    .main-nav {
+        width: 52%;
+        min-height: 0;
+        display: block;
+        top: 20px;
+        right: 11%;
+        
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            }
+
+        li {
+            border: 0;
+            font-weight: normal;
+            font-size: @font-size-base + .4;
+            line-height: @line-height-base + .8;
+            text-transform: none;
+            background: none;
+        }
+        
+        a {
+            padding-bottom: 9px;
+            
+            &:hover {
+                color: @white;
+                border-bottom: 2px solid @white;
+            }
+            
+            &:active {
+                color: @white--a30;
+                border: none;
+                opacity: 1;
+            }
+        }
+    }
+    
+    .intro {
+        min-height: 630px;
+        padding-top: 225px;
+        background: url("../img/bg-intro-1200.jpg") 50% top;
+
+        &__wrap {
+            width: 25%;
+            padding: 0 11%;
+        }
+
+        &__text {
+            font-size: @font-size-base + 3.6;
+            line-height: @line-height-base + 3.6;
+        }
+
+        &__image {
+            position: absolute;
+            right: 11%;
+            bottom: 0;
+            width: 47%;
+            height: 645px;
+            background: url("../img/TEMP-hand_with_iphone-1200.png") center bottom no-repeat; 
         }
     }
 }

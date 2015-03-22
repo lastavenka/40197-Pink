@@ -12,17 +12,18 @@
             .wrapper;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
         }
 
         &__image {
-            width: 43%;
+            width: 262px;
             height: 302px;
+            margin-right: 8%;
             background: url("../img/TEMP-24_hours.png") center bottom no-repeat;
         }
 
         &__content {
-            width: 50%;
+            width: 55%;
         }
 
         &__header {
@@ -34,6 +35,75 @@
         &__more-link {
             color: @dark-pink;
             text-decoration: underline;
+            font-size: @font-size-base + .4;
+            cursor: pointer;
+            
+            &:hover {
+                color: @navi;
+                text-decoration: underline;
+            }
+
+            &:active {
+                color: @navi;
+                opacity: .3;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    
+   .effect {
+        display: block;
+        padding: 57px 0 14px 0;
+        background: @grey-f2;
+    
+        &__wrap {
+            padding: 0 11%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        &__image {
+            width: 300px;
+            height: 302px;
+            margin-right: 7%;
+            background: url("../img/TEMP-24_hours.png") center bottom no-repeat;
+        }
+
+        &__content {
+            width: 55%;
+        }
+
+        &__header {
+            font-size: @font-size-base + 1.6;
+            line-height: @line-height-base + 1.2;
+            font-weight: bold;
+        }
+
+        &__more-link {
+            color: @dark-pink;
+            text-decoration: underline;
+            font-size: @font-size-base + .4;
+            cursor: pointer;
+            
+            &:hover {
+                color: @navi;
+                text-decoration: underline;
+            }
+
+            &:active {
+                color: @navi;
+                opacity: .3;
+                text-decoration: none;
+            }
+        }
+
+        &__text {
+            font-size: @font-size-base + .4;
+            line-height: normal;
         }
     }
 }

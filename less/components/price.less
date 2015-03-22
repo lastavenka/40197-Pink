@@ -155,6 +155,14 @@
         background-color: #bec2c7;
         cursor: pointer;
         border-radius: 50%;
+        
+        &:hover {
+            background-color: #7e868f;
+        }
+        
+        &:active {
+            background-color: @grey-light;
+        }
     }
 
     i.price__pagination-active {
@@ -163,7 +171,7 @@
     }
 }
 
-@media(min-width: 700px) and (max-width: 1200px) {
+@media(min-width: 700px) {
     
     .price__wrap {
         .wrapper;
@@ -218,5 +226,32 @@
 
     .price__pagination {
         display: none;
+    }
+}
+
+@media(min-width: 1200px) {
+    .price__wrap {
+        padding: 0 11%;
+    }
+    
+    .price__table {
+    
+        td {
+            font-size: @font-size-base + .4;
+        }
+    }
+    
+    .price__table-header {
+
+        span {
+        
+            &:first-child {
+                font-size: @font-size-base + .4;
+            }
+
+            &:last-child {
+                font-size: @font-size-base + 1;
+            }
+        }
     }
 }

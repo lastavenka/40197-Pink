@@ -21,6 +21,15 @@
         line-height: @line-height-base - .6;
         text-align: center;
         border-radius: 50px;
+        
+        &:hover {
+            color: @dark-pink;
+            background: @white;
+        }
+        
+        &:active {
+            color: @light-pink;
+        }
     }
     
     &__text {
@@ -48,22 +57,22 @@
         width: 46px;
         height: 57px;
         .sprite;
-        background-position: 0 0;
+        .sprite-logo-apple__download;
     }
         
     &--android {
         width: 42px;
         height: 47px;
         .sprite;
-        background-position: -73px -4px;
+        .sprite-logo-android__download;
     }
         
     &--win-mobile {
         width: 44px;
         height: 42px;
         .sprite;
+        .sprite-logo-wm__download;
         margin-right: 0;
-        background-position: -148px -5px;
     }
 }
 
@@ -71,8 +80,9 @@
     
     .download {
         position: absolute;
-        top: 350px;
+        top: 380px;
         width: 55%;
+        padding: 0;
         background: none;
         
         &__wrap {
@@ -86,6 +96,44 @@
         
     .download__link {
         margin-right: 36px;
+
+        &--win-mobile {
+            margin-right: 0;
+        }
+    }
+
+    .download__text {
+        font-size: @font-size-base + .4;
+    }
+}
+
+@media(min-width: 1200px) {
+    
+    .download {
+        position: absolute;
+        top: 450px;
+        width: 47%;
+        padding: 0;
+        background: none;
+        
+        &__wrap {
+            padding: 0 23%;
+        }
+        
+        &__btn {
+            margin: 0 auto;
+            margin-bottom: 65px;
+            font-size: @font-size-base + .7;
+            width: 300px;
+            padding: 15px 0;
+            border: 3px solid @white;
+            font-weight: bold;
+        }
+    }
+        
+    .download__link {
+        margin-right: 36px;
+        margin-bottom: 60px;
 
         &--win-mobile {
             margin-right: 0;

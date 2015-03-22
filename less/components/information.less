@@ -25,16 +25,7 @@
     padding-top: 50px;
     background: @grey-f2;
     overflow: hidden;
-    
-    &:before {
-        position: absolute;
-        top: -50px;
-        width: 100%;
-        height: 70px;
-        background: @white;
-        content: '';
-        transform: skewY(-5.6deg);
-    } // В резиновой верстке уголки с помощью псевдоэлементов не прокатили. Буду делать SVG
+    // В резиновой верстке уголки с помощью псевдоэлементов не прокатили. Буду делать SVG
     
     &__wrap {
         .wrapper;
@@ -44,6 +35,10 @@
     
     &__item {
         text-align: center;
+    }
+    
+    &__item-image {
+        display: none;
     }
         
     h1 {
@@ -95,6 +90,77 @@
             margin: 0;
             background: url("../img/TEMP-iphone-hi-700.png") center bottom no-repeat;
             order: 1;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    
+    .information__header {
+        padding-bottom: 0;
+        font-size: @font-size-h1 + 2.6;
+        line-height: @line-height-base + 3.6;
+        
+        span:last-child {
+            margin-top: 0;
+            padding: 0 23%;
+        }
+    }
+    
+    .features {
+    
+        &__wrap {
+            padding: 0 11%;
+        }
+
+        &__content {
+            display: flex;
+            width: 100%;
+            padding-top: 40px;
+            justify-content: space-between;
+        }
+
+        &__item {
+            width: 25%;
+            text-align: center;
+        }
+        
+        &__item-image {
+            display: block;
+            width: 100%;
+            height: 300px; 
+            
+            &--mood {
+                background: url("../img/shadow__feature-item.png") center bottom no-repeat,
+                            url("../img/TEMP-iphone-mood.png") center no-repeat;
+            }
+            
+            &--world {
+                background: url("../img/shadow__feature-item.png") center bottom no-repeat,
+                            url("../img/TEMP-iphone-world.png") center no-repeat;
+            }
+            
+            &--friends {
+                background: url("../img/shadow__feature-item.png") center bottom no-repeat,
+                            url("../img/TEMP-iphone-friends.png") center no-repeat;
+            }
+        }
+        
+        h1 {
+            margin: 0;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            font-size: @font-size-h1 + .6;
+            line-height: @line-height-base + .6;
+        }
+        
+        p {
+            font-size: @font-size-base + .4;
+            line-height: @line-height-base + .6;
+        }
+
+        &__image {
+            display: none;
         }
     }
 }

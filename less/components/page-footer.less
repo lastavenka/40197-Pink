@@ -39,15 +39,30 @@
 
     &__contacts-phone,
     &__contacts-email,
-    address,
-    &__contacts-phone:hover,
-    &__contacts-email:hover {
+    &__contacts-phone:visited,
+    &__contacts-email:visited,
+    &__contacts-email:focus,
+    &__contacts-phone:focus,
+    address {
         font-size: @font-size-base + 1;
         font-weight: 300;
         line-height: normal;
         color: @dark-pink;
         font-style: normal;
         flex-grow: 1;
+    }
+    
+    &__contacts-phone:hover,
+    &__contacts-email:hover {
+        color: @navi;
+        text-decoration: underline;
+    }
+    
+    &__contacts-phone:active,
+    &__contacts-email:active {
+        color: @navi;
+        opacity: .3;
+        text-decoration: none;
     }
     
     address {
@@ -57,6 +72,10 @@
     &__contacts-map {
         min-height: 219px;
     } //Карта, как я понимаю, добавляется с помощью JS полностью, поэтому для нее только контейнер
+    
+    .bottom-footer {
+        display: none;
+    }
 }
 
 @media(min-width: 700px) and (max-width: 1200px) {
@@ -94,6 +113,305 @@
 
         address {
             order: 7;
+        }
+    }
+    
+    .page-footer .bottom-footer {
+        display: block;
+        padding: 40px 0;
+     }
+    
+    .bottom-footer__wrap {
+        .wrapper;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .bottom-footer__logo {
+        
+        &-text {
+            display: inline-block;
+            color: @navi;
+            font-family: "GothamRounded-Book", Arial, sans-serif;
+            font-size: @font-size-base + 1.8;
+            line-height: @line-height-base + .8;
+            
+            &:hover,
+            &:visited,
+            &:focus {
+                color: @navi;
+            }
+            
+            &:active {
+                opacity: .3;
+            }
+        }
+        
+        &-image {
+            display: inline-block;
+            width: 59px;
+            height: 40px;
+            background: url("../img/logo__pink.png");
+            
+            &:hover {
+                background: url("../img/logo__navi.png")
+            }
+            
+            &:active {
+                background: url("../img/logo__navi.png");
+                opacity: .3;
+            }
+        }
+    }
+    
+    .social {
+        display: flex;
+        
+        &__button {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 3px solid @grey-light;
+            cursor: pointer;
+            .sprite;
+            .sprite-icon__social--twitter;
+            
+            &:hover {
+              border-color: @navi;  
+            }
+            
+            &:active {
+              opacity: .3;  
+            }
+            
+            &--facebook {
+                margin: 0 12px;
+                .sprite;
+                .sprite-icon__social--facebook;
+            }
+            
+            &--youtube {
+                .sprite;
+                .sprite-icon__social--youtube;
+            }
+        }
+    }
+    
+    .copyright {
+        display: flex;
+        align-items: center;
+        
+        span {
+            font-size: @font-size-base;
+        }
+        
+        .copyright__logo {
+            display: block;
+            width: 27px;
+            height: 33px;
+            margin: 0 13px;
+            .hidden-text;
+            .sprite;
+            .sprite-logo-developer__footer;
+            
+            &:hover {
+                .sprite;
+                .sprite-logo-developer-hover__footer; 
+            }
+            
+            &:active {
+                .sprite;
+                .sprite-logo-developer-active__footer; 
+            }
+            
+            &--owner {
+                margin-right: 0;
+                .sprite;
+                .sprite-logo-owner__footer;
+            }
+            
+            &--owner:hover {
+                .sprite;
+                .sprite-logo-owner-hover__footer; 
+            }
+            
+            &--owner:active {
+                .sprite;
+                .sprite-logo-owner-active__footer; 
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .page-footer__wrap {
+        padding: 0 11%;
+    }
+    
+    .page-footer__contacts {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    
+        &-header {
+            font-size: @font-size-base + 3.6;
+            line-height: @line-height-base + 3.6;
+            order: 1;
+        }
+        
+        &-text {
+            width: 33%;
+            margin-bottom: 30px;
+        }
+
+        &-text--phone {
+            order: 2;
+        }
+
+        &-text--email {
+            order: 4;
+        }
+        
+        &-text--address {
+            margin-top: 20px;
+            order: 3;
+        }
+
+        &-phone {
+            width: 33%;
+            order: 5;
+        }
+
+        &-email {
+            width: 33%;
+            order: 7;
+        }
+
+        address {
+            width: 33%;
+            order: 6;
+        }
+    }
+    
+    .page-footer .bottom-footer {
+        display: block;
+        padding: 70px 0;
+     }
+    
+    .bottom-footer__wrap {
+        padding: 0 11%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .bottom-footer__logo {
+        
+        &-text {
+            display: inline-block;
+            color: @navi;
+            font-family: "GothamRounded-Book", Arial, sans-serif;
+            font-size: @font-size-base + 1.8;
+            line-height: @line-height-base + .8;
+            
+            &:hover,
+            &:visited,
+            &:focus {
+                color: @navi;
+            }
+            
+            &:active {;
+                opacity: .3;
+            }
+        }
+                
+        &-image {
+            display: inline-block;
+            width: 59px;
+            height: 40px;
+            background: url("../img/logo__pink-1200.png");
+        }
+    }
+    
+    .social {
+        display: flex;
+        
+        &__button {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 3px solid @grey-light;
+            cursor: pointer;
+            .sprite;
+            .sprite-icon__social--twitter;
+            
+            &:hover {
+              border-color: @navi;  
+            }
+            
+            &:active {
+              opacity: .3;  
+            }
+            
+            &--facebook {
+                margin: 0 12px;
+                .sprite;
+                .sprite-icon__social--facebook;
+            }
+            
+            &--youtube {
+                .sprite;
+                .sprite-icon__social--youtube;
+            }
+        }
+    }
+    
+    .copyright {
+        display: flex;
+        align-items: center;
+        
+        span {
+            font-size: @font-size-base;
+        }
+        
+        .copyright__logo {
+            display: block;
+            width: 27px;
+            height: 33px;
+            margin: 0 13px;
+            .hidden-text;
+            .sprite;
+            .sprite-logo-developer__footer;
+            
+            &:hover {
+                .sprite;
+                .sprite-logo-developer-hover__footer; 
+            }
+            
+            &:active {
+                .sprite;
+                .sprite-logo-developer-active__footer; 
+            }
+            
+            &--owner {
+                margin-right: 0;
+                .sprite;
+                .sprite-logo-owner__footer;
+            }
+            
+            &--owner:hover {
+                .sprite;
+                .sprite-logo-owner-hover__footer; 
+            }
+            
+            &--owner:active {
+                .sprite;
+                .sprite-logo-owner-active__footer; 
+            }
         }
     }
 }
