@@ -2,7 +2,7 @@
     min-width: 320px;
     min-height: 243px;
     padding-top: 28px;
-    padding-bottom: 26px;
+    padding-bottom: 10px;
     background-color: @dark-blue;
     
     &__wrap {
@@ -22,13 +22,9 @@
         text-align: center;
         border-radius: 50px;
         
-        &:hover {
-            color: @dark-pink;
-            background: @white;
-        }
-        
         &:active {
             color: @light-pink;
+            background: @white;
         }
     }
     
@@ -56,23 +52,20 @@
     &--apple {
         width: 46px;
         height: 57px;
-        .sprite;
-        .sprite-logo-apple__download;
+        background: url("../img/apple-logo.svg") no-repeat;
     }
         
     &--android {
         width: 42px;
         height: 47px;
-        .sprite;
-        .sprite-logo-android__download;
+        background: url("../img/android-logo.svg") no-repeat;
     }
         
     &--win-mobile {
         width: 44px;
         height: 42px;
-        .sprite;
-        .sprite-logo-wm__download;
         margin-right: 0;
+        background: url("../img/microsoft-logo.svg") no-repeat;
     }
 }
 
@@ -96,6 +89,7 @@
         
     .download__link {
         margin-right: 36px;
+        margin-bottom: 35px;
 
         &--win-mobile {
             margin-right: 0;
@@ -128,6 +122,15 @@
             padding: 15px 0;
             border: 3px solid @white;
             font-weight: bold;
+            
+            &:hover {
+                color: @dark-pink;
+                background: @white;
+            }
+        
+            &:active {
+                color: @light-pink;
+            }
         }
     }
         

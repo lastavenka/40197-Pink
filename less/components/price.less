@@ -1,24 +1,22 @@
 .price {
     position: relative;
-    min-height: 320px;
-    padding-top: 93px;
-    padding-bottom: 46px;
-    background: @grey-f2;
+    padding-top: 90px;
+    padding-bottom: 35px;
     overflow: hidden;
+    background: @grey-f2;
     
     &:before {
         position: absolute;
-        top: -15px;
-        width: 320px;
-        height: 31px;
-        background: @white;
+        top: 0;
+        width: 100%;
+        height: 32px;
+        background-image: url("../img/triangle-grey.svg");
         content: '';
-        transform: skewY(-5.6deg);
     }
     
     &__table {
         width: 270%;
-        margin-left: -85%;
+        margin-left: -84%;
         border-collapse: collapse;
     }
 }
@@ -80,65 +78,22 @@
 
 .option-yes {
     display: block;
-    position: relative;
     float: right;
-    width: 32px;
-    height: 32px;
+    width: 31px;
+    height: 22px;
     margin-right: 18px;
     .hidden-text;
-    
-    &:before,
-    &:after {
-        position: absolute;
-        height: 3px;
-        background-color: @green;
-        border-radius: 2px;
-        content: '';
-    }
-
-    &:before {
-        top: 18px;
-        right: -4px;
-        width: 30px;
-        transform: rotate(-45deg);
-    }
-
-    &:after {
-        top: 24px;
-        right: 18px;
-        width: 15px;
-        transform: rotate(45deg);
-    }
+    background: url("../img/yes.svg") no-repeat;
 }
 
 .option-no {
     display: block;
-    position: relative;
     float: right;
-    width: 29px;
+    width: 27px;
     height: 27px;
     margin-right: 19px;
     .hidden-text;
-
-    &:before,
-    &:after {
-        position: absolute;
-        top: 12px;
-        right: -3px;
-        width: 35px;
-        height: 3px;
-        background-color: @orange;
-        border-radius: 2px;
-        content: '';
-    }
-
-    &:before {
-        transform: rotate(45deg);
-    }
-
-    &:after {
-        transform: rotate(-45deg);
-    }
+    background: url("../img/no.svg") no-repeat;
 }
 
 .price__pagination {
@@ -173,6 +128,16 @@
 
 @media(min-width: 700px) {
     
+    .price {
+        padding-top: 80px;
+        padding-bottom: 65px;
+        background: @grey-f2;
+        
+        &:before {
+            height: 50px;
+        }
+    }
+    
     .price__wrap {
         .wrapper;
     }
@@ -183,7 +148,7 @@
     
         td {
             width: 25%;
-            padding: 10px 15px;
+            padding: 8px 15px 5px 15px;
             text-align: center;
 
             &:first-child {
@@ -198,6 +163,7 @@
     }
     
     .price__table-header {
+        padding: 10px 0 8px 0;
         
         &:first-child {
             display: table-cell;
@@ -230,6 +196,17 @@
 }
 
 @media(min-width: 1200px) {
+    
+    .price {
+        padding-top: 150px;
+        padding-bottom: 95px;
+        background: @grey-f2;
+        
+        &:before {
+            height: 90px;
+        }
+    }
+    
     .price__wrap {
         padding: 0 11%;
     }
@@ -237,11 +214,13 @@
     .price__table {
     
         td {
+            padding: 15px 15px 12px 15px;
             font-size: @font-size-base + .4;
         }
     }
     
     .price__table-header {
+        padding: 17px 0 20px 0;
 
         span {
         

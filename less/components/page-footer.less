@@ -1,25 +1,36 @@
-//SVG-треугольник сделаю позже, после вебинара о SVG-графике
-
 .page-footer {
     min-width: 320px;
     min-height: 351px;
     padding-top: 20px;
-    padding-bottom: 35px;
     
     &__wrap {
         .wrapper;
-    }
-    
-    &__contacts {
         display: flex;
         align-items: center;
         flex-direction: column;
         text-align: center;
     }
+    
+    &__contacts {
+        position: relative;
+        padding-bottom: 35px;
+        
+        &:after {
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            height: 32px;
+            background-image: url("../img/triangle-white.svg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: cover;
+            content: '';
+        }
+    }
 
     &__contacts-header {
         width: 100%;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
         font-size: @font-size-base + 1;
         line-height: @line-height-base + .4;
         font-weight: 300;
@@ -71,6 +82,7 @@
 
     &__contacts-map {
         min-height: 219px;
+        background: grey;
     } //Карта, как я понимаю, добавляется с помощью JS полностью, поэтому для нее только контейнер
     
     .bottom-footer {
@@ -80,11 +92,20 @@
 
 @media(min-width: 700px) and (max-width: 1200px) {
     
-    .page-footer__contacts {
+    .page-footer__wrap {
         flex-wrap: wrap;
         flex-direction: row;
+    }
+         
+    .page-footer__contacts {
+        padding-bottom: 25px;
+        
+        &:after {
+            height: 70px;
+        }
     
         &-header {
+            margin-top: 30px;
             font-size: @font-size-base + 2.6;
             line-height: @line-height-base + 2.6;
             order: 1;
@@ -116,6 +137,10 @@
         }
     }
     
+    .page-footer__contacts-map {
+        min-height: 377px;
+    }
+    
     .page-footer .bottom-footer {
         display: block;
         padding: 40px 0;
@@ -130,40 +155,16 @@
     }
     
     .bottom-footer__logo {
-        
-        &-text {
-            display: inline-block;
-            color: @navi;
-            font-family: "GothamRounded-Book", Arial, sans-serif;
-            font-size: @font-size-base + 1.8;
-            line-height: @line-height-base + .8;
-            
-            &:hover,
-            &:visited,
-            &:focus {
-                color: @navi;
-            }
-            
+        display: block;
+        width: 147px;
+        height: 41px;
+        .hidden-text;
+        background: url("../img/logotype-blue-2.svg") no-repeat;
+
             &:active {
-                opacity: .3;
-            }
-        }
-        
-        &-image {
-            display: inline-block;
-            width: 59px;
-            height: 40px;
-            background: url("../img/logo__pink.png");
-            
-            &:hover {
-                background: url("../img/logo__navi.png")
-            }
-            
-            &:active {
-                background: url("../img/logo__navi.png");
-                opacity: .3;
-            }
-        }
+                    background: url("../img/logotype-blue-2-hover.svg") no-repeat;
+                    opacity: .3;
+                }
     }
     
     .social {
@@ -175,26 +176,20 @@
             border-radius: 50%;
             border: 3px solid @grey-light;
             cursor: pointer;
-            .sprite;
-            .sprite-icon__social--twitter;
-            
-            &:hover {
-              border-color: @navi;  
-            }
+            background: url("../img/twitter.svg") center no-repeat;
             
             &:active {
-              opacity: .3;  
+                border-color: @navi; 
+                opacity: .3;  
             }
             
             &--facebook {
                 margin: 0 12px;
-                .sprite;
-                .sprite-icon__social--facebook;
+                background: url("../img/facebook.svg") center no-repeat;
             }
             
             &--youtube {
-                .sprite;
-                .sprite-icon__social--youtube;
+                background: url("../img/youtube.svg") center no-repeat;
             }
         }
     }
@@ -212,51 +207,39 @@
             width: 27px;
             height: 33px;
             margin: 0 13px;
-            .hidden-text;
-            .sprite;
-            .sprite-logo-developer__footer;
-            
-            &:hover {
-                .sprite;
-                .sprite-logo-developer-hover__footer; 
-            }
+            fill: @dark-pink;
             
             &:active {
-                .sprite;
-                .sprite-logo-developer-active__footer; 
+                fill: @navi;
+                opacity: .3;
             }
             
-            &--owner {
-                margin-right: 0;
-                .sprite;
-                .sprite-logo-owner__footer;
-            }
-            
-            &--owner:hover {
-                .sprite;
-                .sprite-logo-owner-hover__footer; 
-            }
-            
-            &--owner:active {
-                .sprite;
-                .sprite-logo-owner-active__footer; 
+            span {
+                display: none;
             }
         }
     }
 }
 
 @media(min-width: 1200px) {
+    
     .page-footer__wrap {
         padding: 0 11%;
-    }
-    
-    .page-footer__contacts {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
+    }
+    
+    .page-footer__contacts {
+        padding-bottom: 0;
+        
+        &:after {
+            height: 120px;
+        }
     
         &-header {
+            margin-bottom: 30px;
             font-size: @font-size-base + 3.6;
             line-height: @line-height-base + 3.6;
             order: 1;
@@ -296,6 +279,10 @@
         }
     }
     
+    .page-footer__contacts-map {
+        min-height: 520px;
+    }
+    
     .page-footer .bottom-footer {
         display: block;
         padding: 70px 0;
@@ -310,31 +297,18 @@
     }
     
     .bottom-footer__logo {
+        width: 147px;
+        height: 41px;
+        background: url("../img/logotype-blue-3.svg") no-repeat;
         
-        &-text {
-            display: inline-block;
-            color: @navi;
-            font-family: "GothamRounded-Book", Arial, sans-serif;
-            font-size: @font-size-base + 1.8;
-            line-height: @line-height-base + .8;
-            
-            &:hover,
-            &:visited,
-            &:focus {
-                color: @navi;
-            }
-            
-            &:active {;
-                opacity: .3;
-            }
-        }
-                
-        &-image {
-            display: inline-block;
-            width: 59px;
-            height: 40px;
-            background: url("../img/logo__pink-1200.png");
-        }
+            &:hover {
+                    background: url("../img/logotype-blue-3-hover.svg") no-repeat;
+                }
+
+            &:active {
+                    background: url("../img/logotype-blue-3-hover.svg") no-repeat;
+                    opacity: .3;
+                }
     }
     
     .social {
@@ -346,8 +320,7 @@
             border-radius: 50%;
             border: 3px solid @grey-light;
             cursor: pointer;
-            .sprite;
-            .sprite-icon__social--twitter;
+            background: url("../img/twitter.svg") center no-repeat;
             
             &:hover {
               border-color: @navi;  
@@ -359,13 +332,11 @@
             
             &--facebook {
                 margin: 0 12px;
-                .sprite;
-                .sprite-icon__social--facebook;
+                background: url("../img/facebook.svg") center no-repeat;
             }
             
             &--youtube {
-                .sprite;
-                .sprite-icon__social--youtube;
+                background: url("../img/youtube.svg") center no-repeat;
             }
         }
     }
@@ -383,34 +354,19 @@
             width: 27px;
             height: 33px;
             margin: 0 13px;
-            .hidden-text;
-            .sprite;
-            .sprite-logo-developer__footer;
+            fill: @dark-pink;
             
             &:hover {
-                .sprite;
-                .sprite-logo-developer-hover__footer; 
+                fill: @navi;
             }
             
             &:active {
-                .sprite;
-                .sprite-logo-developer-active__footer; 
+                fill: @navi;
+                opacity: .3;
             }
             
-            &--owner {
-                margin-right: 0;
-                .sprite;
-                .sprite-logo-owner__footer;
-            }
-            
-            &--owner:hover {
-                .sprite;
-                .sprite-logo-owner-hover__footer; 
-            }
-            
-            &--owner:active {
-                .sprite;
-                .sprite-logo-owner-active__footer; 
+            span {
+                display: none;
             }
         }
     }
