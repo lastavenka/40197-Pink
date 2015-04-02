@@ -1,0 +1,342 @@
+.page-footer {
+  min-width: 320px;
+  min-height: 351px;
+  padding-top: 20px;
+
+  &__wrap {
+    .wrapper;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__contacts {
+    position: relative;
+    padding-bottom: 35px;
+
+    &:after {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      height: 32px;
+      background-image: url("../img/triangle-white.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: cover;
+      content: "";
+      z-index: 10;
+    }
+  }
+
+  &__contacts-header {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: @font-size-base + 1;
+    line-height: @line-height-base + .4;
+    font-weight: 300;
+  }
+
+  &__contacts-text {
+    display: block;
+    margin-top: 20px;
+    font-size: @font-size-base + .4;
+    font-weight: bold;
+    line-height: normal;
+  }
+
+  &__contacts-phone,
+  &__contacts-email,
+  &__contacts-email:focus,
+  &__contacts-phone:focus,
+  address {
+    font-size: @font-size-base + 1;
+    font-weight: 300;
+    line-height: normal;
+    color: @dark-pink;
+    font-style: normal;
+    flex-grow: 1;
+  }
+
+  &__contacts-phone:hover,
+  &__contacts-email:hover {
+    color: @navi;
+    text-decoration: underline;
+  }
+
+  &__contacts-phone:active,
+  &__contacts-email:active {
+    color: @navi;
+    opacity: .3;
+    text-decoration: none;
+  }
+
+  &__contacts-map {
+    height: 220px;
+  }
+
+  .bottom-footer {
+    display: none;
+  }
+}
+
+@media(min-width: @min-width-1) and (max-width: @max-width-1) {
+  .page-footer__wrap {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .page-footer__contacts {
+    padding-bottom: 25px;
+
+    &:after {
+      height: 70px;
+    }
+
+    &-header {
+      margin-top: 30px;
+      font-size: @font-size-base + 2.6;
+      line-height: @line-height-base + 2.6;
+      order: 1;
+    }
+  }
+
+  .page-footer__inner-phone {
+    width: 50%;
+    order: 2;
+  }
+
+  .page-footer__inner-email {
+    width: 50%;
+    order: 3;
+  }
+
+  .page-footer__inner-address {
+    width: 100%;
+    margin-top: 40px;
+    order: 4;
+  }
+
+  .page-footer__contacts-map {
+    min-height: 377px;
+  }
+
+  .page-footer .bottom-footer {
+    display: block;
+    padding: 40px 0;
+  }
+
+  .bottom-footer__wrap {
+    .wrapper;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottom-footer__logo {
+    display: block;
+    width: 147px;
+    height: 41px;
+    .hidden-text;
+    background: url("../img/logotype-blue-2.svg") no-repeat;
+
+    &:active {
+      background: url("../img/logotype-blue-2-hover.svg") no-repeat;
+      opacity: .3;
+    }
+  }
+
+  .social {
+    display: flex;
+
+    &__button {
+      display: block;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 3px solid @grey-light;
+      cursor: pointer;
+      background: url("../img/twitter.svg") center no-repeat;
+
+      &:active {
+        border-color: @navi;
+        opacity: .3;
+      }
+
+      &--facebook {
+        margin: 0 12px;
+        background: url("../img/facebook.svg") center no-repeat;
+      }
+
+      &--youtube {
+        background: url("../img/youtube.svg") center no-repeat;
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: @font-size-base;
+    }
+
+    .copyright__logo {
+      display: block;
+      width: 27px;
+      height: 33px;
+      margin: 0 13px;
+      fill: @dark-pink;
+
+      &:active {
+        fill: @navi;
+        opacity: .3;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@media(min-width: @min-width-2) {
+  .page-footer__wrap {
+    padding: 0 11%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .page-footer__contacts {
+    padding-bottom: 0;
+
+    &:after {
+      height: 120px;
+    }
+
+    &-header {
+      margin-bottom: 30px;
+      font-size: @font-size-base + 3.6;
+      line-height: @line-height-base + 3.6;
+      order: 1;
+    }
+
+    &-text {
+      margin-bottom: 30px;
+    }
+
+    .page-footer__inner-phone {
+      width: 33%;
+      order: 2;
+    }
+
+    .page-footer__inner-email {
+      width: 33%;
+      order: 4;
+    }
+
+    .page-footer__inner-address {
+      width: 33%;
+      margin-top: 0;
+      order: 3;
+    }
+  }
+
+  .page-footer__contacts-map {
+    min-height: 520px;
+  }
+
+  .page-footer .bottom-footer {
+    display: block;
+    padding: 70px 0;
+  }
+
+  .bottom-footer__wrap {
+    padding: 0 11%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottom-footer__logo {
+    display: block;
+    width: 147px;
+    height: 41px;
+    background: url("../img/logotype-blue-3.svg") no-repeat;
+
+    &:hover {
+      background: url("../img/logotype-blue-3-hover.svg") no-repeat;
+    }
+
+    &:active {
+      background: url("../img/logotype-blue-3-hover.svg") no-repeat;
+      opacity: .3;
+    }
+  }
+
+  .social {
+    display: flex;
+
+    &__button {
+      display: block;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 3px solid @grey-light;
+      cursor: pointer;
+      background: url("../img/twitter.svg") center no-repeat;
+
+      &:hover {
+        border-color: @navi;
+      }
+
+      &:active {
+        opacity: .3;
+      }
+
+      &--facebook {
+        margin: 0 12px;
+        background: url("../img/facebook.svg") center no-repeat;
+      }
+
+      &--youtube {
+        background: url("../img/youtube.svg") center no-repeat;
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: @font-size-base;
+    }
+
+    .copyright__logo {
+      display: block;
+      width: 27px;
+      height: 33px;
+      margin: 0 13px;
+      fill: @dark-pink;
+
+      &:hover {
+        fill: @navi;
+      }
+
+      &:active {
+        fill: @navi;
+        opacity: .3;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}

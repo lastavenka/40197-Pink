@@ -1,0 +1,111 @@
+.effect {
+  display: none;
+}
+
+@media(min-width: @min-width-1) and (max-width: @max-width-1) {
+  .effect {
+    display: block;
+    padding: 57px 0 40px 0;
+
+    &__wrap {
+      .wrapper;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    &__image {
+      position: relative;
+      width: 262px;
+      height: 302px;
+      margin-right: 8%;
+      background: url("../img/timer.svg") center bottom no-repeat;
+    }
+
+    &__content {
+      margin-top: 20px;
+      width: 55%;
+    }
+
+    &__header {
+      font-size: @font-size-base + 1.6;
+      line-height: @line-height-base + 1.2;
+      font-weight: bold;
+    }
+
+    &__more-link {
+      color: @dark-pink;
+      text-decoration: underline;
+      font-size: @font-size-base;
+      cursor: pointer;
+
+      &:hover {
+        color: @navi;
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: @navi;
+        opacity: .3;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media(min-width: @min-width-2) {
+  .effect {
+    display: block;
+    padding: 57px 0 67px 0;
+    background: @grey-f2;
+
+    &__wrap {
+      padding: 0 11%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    &__image {
+      width: 300px;
+      height: 346px;
+      margin-right: 7%;
+      background: url("../img/timer-grey.svg") center bottom no-repeat;
+      background-size: 100% auto;
+    }
+
+    &__content {
+      margin-top: 70px;
+      width: 55%;
+    }
+
+    &__header {
+      font-size: @font-size-base + 1.6;
+      line-height: @line-height-base + 1.2;
+      font-weight: bold;
+    }
+
+    &__more-link {
+      color: @dark-pink;
+      text-decoration: underline;
+      font-size: @font-size-base + .4;
+      cursor: pointer;
+
+      &:hover {
+        color: @navi;
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: @navi;
+        opacity: .3;
+        text-decoration: none;
+      }
+    }
+
+    &__text {
+      font-size: @font-size-base + .4;
+      line-height: normal;
+    }
+  }
+}

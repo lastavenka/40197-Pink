@@ -5,3 +5,5 @@ Thumbs.db
 prepros.cfg
 *.sublime*
 *.map
+build
+bower_components

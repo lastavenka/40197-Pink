@@ -1,0 +1,147 @@
+.download {
+  min-width: 320px;
+  min-height: 243px;
+  padding-top: 28px;
+  padding-bottom: 10px;
+  background-color: @dark-blue;
+
+  &__wrap {
+    .wrapper;
+  }
+
+  &__btn {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 31px;
+    padding: 15px 0;
+    border: 3px solid @white;
+    font-weight: bold;
+    font-size: @font-size-base + .4;
+    line-height: @line-height-base - .6;
+    text-align: center;
+    border-radius: 50px;
+
+    &:active {
+      color: @light-pink;
+      background: @white;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    text-align: center;
+    color: @white;
+    font-weight: 300;
+  }
+}
+
+.download__link {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 25px;
+  vertical-align: bottom;
+  .hidden-text;
+
+  &-wrap {
+    .wrapper;
+    font-size: 0;
+    text-align: center;
+  }
+
+  &--apple {
+    width: 46px;
+    height: 57px;
+    background: url("../img/apple-logo.svg") no-repeat;
+  }
+
+  &--android {
+    width: 42px;
+    height: 47px;
+    background: url("../img/android-logo.svg") no-repeat;
+  }
+
+  &--win-mobile {
+    width: 44px;
+    height: 42px;
+    margin-right: 0;
+    background: url("../img/microsoft-logo.svg") no-repeat;
+  }
+}
+
+@media(min-width: @min-width-1) and (max-width: @max-width-1) {
+  .download {
+    position: absolute;
+    top: 380px;
+    width: 55%;
+    padding: 0;
+    background: none;
+
+    &__wrap {
+      padding: 0 11%;
+    }
+
+    &__btn {
+      margin-bottom: 45px;
+    }
+  }
+
+  .download__link {
+    margin-right: 36px;
+    margin-bottom: 35px;
+
+    &--win-mobile {
+      margin-right: 0;
+    }
+  }
+
+  .download__text {
+    font-size: @font-size-base + .4;
+  }
+}
+
+@media(min-width: @min-width-2) {
+  .download {
+    position: absolute;
+    top: 450px;
+    width: 47%;
+    padding: 0;
+    background: none;
+
+    &__wrap {
+      padding: 0 23%;
+    }
+
+    &__btn {
+      margin: 0 auto;
+      margin-bottom: 65px;
+      font-size: @font-size-base + .7;
+      width: 300px;
+      padding: 15px 0;
+      border: 3px solid @white;
+      font-weight: bold;
+
+      &:hover {
+        color: @dark-pink;
+        background: @white;
+      }
+
+      &:active {
+        color: @light-pink;
+      }
+    }
+  }
+
+  .download__link {
+    margin-right: 36px;
+    margin-bottom: 60px;
+
+    &--win-mobile {
+      margin-right: 0;
+    }
+  }
+
+  .download__text {
+    font-size: @font-size-base + .4;
+  }
+}
