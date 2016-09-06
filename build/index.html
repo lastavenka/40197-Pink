@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PINK</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="bower_components/tap/dist/tap.min.js"></script>
+</head>
+
+<body>
+
+    <svg style="display:none">
+        <symbol viewBox="0 0 25.988 29.922" id="icon-glukhanko">
+            <path d="M0 0h25.988v29.922l-12.994-4.81L0 29.92V0zm20.154 17.895c-.24 0-.51-.006-.8-.018-.294-.014-.51-.05-.646-.116-.225-.102-.39-.26-.5-.468-.107-.21-.162-.492-.162-.854 0-.394.018-1.21.055-2.457.036-1.243.055-2.318.055-3.225 0-.858-.146-1.556-.44-2.088-.293-.535-.687-.942-1.185-1.223-.522-.29-1.108-.48-1.758-.572-.65-.093-1.365-.14-2.143-.14-.563 0-1.173.068-1.83.2-.66.132-1.24.318-1.747.56-.513.233-.95.528-1.306.885-.357.357-.536.76-.536 1.21 0 .52.174.945.52 1.27.346.323.857.486 1.533.486.476 0 .827-.043 1.057-.132.23-.088.437-.212.622-.373.138-.12.242-.283.314-.487.072-.205.11-.375.11-.51 0-.307-.058-.623-.17-.953-.113-.33-.18-.573-.206-.734.145-.104.335-.207.572-.308.237-.1.533-.15.886-.15.393 0 .71.088.952.264.24.176.417.392.53.65.104.225.172.5.205.83.032.328.048.594.048.795v1.155c-.467.224-1.207.48-2.22.767-1.013.285-1.88.56-2.604.826-.38.143-.727.3-1.044.47-.317.17-.597.38-.838.64-.265.28-.47.605-.615.97-.145.365-.217.81-.217 1.332 0 .91.33 1.637.99 2.19.657.55 1.454.824 2.387.824.627 0 1.115-.045 1.465-.133.35-.09.714-.223 1.09-.396.29-.137.562-.302.815-.493.253-.193.517-.426.79-.7h.073c.168.547.484.966.95 1.26.464.293 1.19.438 2.175.438.537 0 1.046-.064 1.526-.192s.896-.27 1.25-.42v-.878zm-6.02-1.302c-.218.265-.47.487-.755.668-.287.184-.65.272-1.095.272-.42 0-.77-.14-1.057-.42-.286-.282-.43-.738-.43-1.364 0-.475.084-.887.254-1.238.17-.35.403-.638.7-.862.283-.217.645-.424 1.088-.622.443-.197.89-.372 1.342-.525l-.05 4.093z" />
+        </symbol>
+        <symbol viewBox="0 0 26.096 33.803" id="icon-htmlacademy">
+            <path d="M13.047 0L0 1.456V25.93l13.047 7.836v.037l13.05-7.872V1.558L13.046 0zm10.99 24.745l-10.99 6.622v-7.385L6.68 21.124v-.02l6.372-2.817v-.02.01l6.367 2.815v-.006l.01.006v-1.234l-6.367-2.813-.003.003-.007-.003v.01-.002L6.678 19.87v-1.235l5.847-2.584-1.385-.62L6.68 17.4v-1.234l3.076-1.36-1.385-.622-1.69.748V13.7l.305-.135-3.73-1.674 9.793-4.247v-5.56l10.99 1.322v21.34z" />
+            <path d="M19.428 17.39l-4.47-1.976-1.388.62 5.858 2.59M19.428 14.92l-1.694-.748-1.388.62 3.082 1.363" />
+        </symbol>
+    </svg>
+    <header class="page-header">
+        <div class="top-header">
+            <div class="top-header__wrap">
+                <a href="#" class="top-header__logo">PINK</a>
+                <a href="#" class="top-header__hamburger"></a>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="main-nav__wrap">
+                <ul class="main-nav__list">
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Возможности</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Стоимость</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="intro">
+            <div class="intro__wrap">
+                <span class="intro__text">Взгляните на&nbsp;жизнь иначе!</span>
+            </div>
+            <div class="intro__image"></div>
+        </div>
+
+    </header>
+
+    <div class="download">
+        <div class="download__wrap">
+            <a href="#" class="download__btn">Скачать приложение</a>
+            <div class="download__link-wrap">
+                <a href="#" class="download__link download__link--apple">Скачать в App Store</a>
+                <a href="#" class="download__link download__link--android">Скачать в Google Play</a>
+                <a href="#" class="download__link download__link--win-mobile">Скачать в Windows Phone Store</a>
+            </div>
+            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, Mac&nbsp;OS, Windows&nbsp;8</p>
+        </div>
+    </div>
+
+    <section class="information">
+        <div class="information__wrap">
+            <h1 class="information__header">
+                <span>Устали от серости мегаполиса?</span>
+                <span>Нам есть, что вам предложить!</span>
+            </h1>
+        </div>
+
+        <div class="features">
+            <div class="features__wrap">
+                <div class="features__content">
+                    <section class="features__item">
+                        <div class="features__item-image features__item-image--mood"></div>
+                        <h1>Поднимает настроение</h1>
+                        <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                    </section>
+                    <section class="features__item">
+                        <div class="features__item-image features__item-image--world"></div>
+                        <h1>Меняет мир вокруг</h1>
+                        <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                    </section>
+                    <section class="features__item">
+                        <div class="features__item-image features__item-image--friends"></div>
+                        <h1>Заводит новых друзей</h1>
+                        <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="effect">
+        <div class="effect__wrap">
+            <div class="effect__image"></div>
+            <section class="effect__content">
+                <h1 class="effect__header">Эффект на 24 часа!</h1>
+                <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+                </p>
+                <a class="effect__more-link">Узнать больше об исследовании</a>
+            </section>
+        </div>
+    </div>
+
+    <div class="reviews-slider">
+        <div class="reviews-slider__wrap">
+            <div class="reviews-slider__controls reviews-slider__controls--prev"></div>
+            <div class="reviews-slider__controls reviews-slider__controls--next"></div>
+            <div class="reviews-slider__container">
+                <div class="reviews-slider__item">
+                    <div class="reviews-slider__item-wrap">
+                        <div class="reviews-slider__item-image"></div>
+                        <div class="reviews-slider__item-header">Николай Петров
+                            <span class="reviews-slider__item-subheader">25 лет, водитель трамвая</span>
+                        </div>
+                        <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                    </div>
+                </div>
+                <div class="reviews-slider__item">
+                    <div class="reviews-slider__item-wrap">
+                        <div class="reviews-slider__item-image"></div>
+                        <div class="reviews-slider__item-header">Петр Петров
+                            <span class="reviews-slider__item-subheader">25 лет, водитель трамвая</span>
+                        </div>
+                        <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                    </div>
+                </div>
+                <div class="reviews-slider__item">
+                    <div class="reviews-slider__item-wrap">
+                        <div class="reviews-slider__item-image"></div>
+                        <div class="reviews-slider__item-header">Николай Николаев
+                            <span class="reviews-slider__item-subheader">25 лет, водитель трамвая</span>
+                        </div>
+                        <blockquote>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews-slider__pagination">
+            <i class="reviews-slider__pagination-active"></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+
+    <div class="price">
+        <div class="price__wrap">
+            <table class="price__table">
+                <thead>
+                    <tr>
+                        <th class="price__table-header"></th>
+                        <th class="price__table-header">
+                            <span>База</span>
+                            <span>1,99 USD</span>
+                        </th>
+                        <th class="price__table-header">
+                            <span>Стандарт</span>
+                            <span>3,99 USD</span>
+                            <div class="table-flag">
+                                <div class="table-flag__image">хит</div>
+                            </div>
+                        </th>
+                        <th class="price__table-header">
+                            <span>Анлим</span>
+                            <span>9,99 USD</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span>Розовый фильтр</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Розовый фильтр</span>
+                            <span class="option-yes">да</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Розовый фильтр</span>
+                            <span class="option-yes">да</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Розовый фильтр</span>
+                            <span class="option-yes">да</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Смайлики</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Смайлики</span>
+                            <span class="option-no">нет</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Смайлики</span>
+                            <span class="option-yes">да</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Смайлики</span>
+                            <span class="option-yes">да</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>Комментарии</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Комментарии</span>
+                            <span class="option-no">нет</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Комментарии</span>
+                            <span class="option-no">нет</span>
+                        </td>
+                        <td>
+                            <span class="price__table-data">Комментарии</span>
+                            <span class="option-yes">да</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="price__pagination">
+            <i class="price__pagination-active"></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="page-footer__contacts">
+            <div class="page-footer__wrap">
+                <p class="page-footer__contacts-header">Остались вопросы?
+                    <br>Свяжитесь с нами!</p>
+                <div class="page-footer__inner-phone">
+                    <span class="page-footer__contacts-text page-footer__contacts-text--phone">Звоните:</span>
+                    <a href="tel:88001000900" class="page-footer__contacts-phone">8&nbsp;(800)&nbsp;1000&nbsp;900</a>
+                </div>
+                <div class="page-footer__inner-email">
+                    <span class="page-footer__contacts-text page-footer__contacts-text--email">Пишите:</span>
+                    <a href="mailto:hello@pinkapp.ru" class="page-footer__contacts-email">hello@pinkapp.ru</a>
+                </div>
+                <div class="page-footer__inner-address">
+                    <span class="page-footer__contacts-text page-footer__contacts-text--address">Приезжайте в гости:</span>
+                    <address>Санкт-Петербург,<br>Невский проспект, д. 20</address>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer__contacts-map">
+            <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=wosGNWsqw1XsbgsYGLjX6hnZBw__H_wd&width=100%"></script>
+        </div>
+        <div class="bottom-footer">
+            <div class="bottom-footer__wrap">
+                <a href="#" class="bottom-footer__logo">PINK</a>
+                <div class="social">
+                    <a class="social__button social__button--twitter"></a>
+                    <a class="social__button social__button--facebook"></a>
+                    <a class="social__button social__button--youtube"></a>
+                </div>
+                <div class="copyright">
+                    <span>Website by</span>
+                    <a href="#" class="copyright__logo">
+                        <svg width="25.988px" height="29.922px">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-glukhanko"></use>
+                        </svg>
+                        <span>Glukhanko</span>
+                    </a>
+                    <span>for</span>
+                    <a href="#" class="copyright__logo">
+                        <svg width="26.096px" height="33.803px">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-htmlacademy"></use>
+                        </svg>
+                        <span>HTMLAcademy</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+
+</body>
+
+</html>
