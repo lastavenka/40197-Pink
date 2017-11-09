@@ -1,12 +1,14 @@
-# Проект «Pink»
+<p>Front-end development of mobile app page</p>
+<a href="http://lastavenka.github.io/pink/build/index.html" target="_blank">Final result</a>
 
-* Студент: [Наташа Ластовенко](https://htmlacademy.ru/profile/id40197).
-* Наставник: [Николай Громов](https://htmlacademy.ru/profile/id6170).
-
---
-
-Не удаляйте и не обращайте внимание на файлы: `.editorconfig`, `.gitignore`, `.travis.yml`, `Gruntfile.js`, `package.json`.
-
---
-
-_Репозиторий создан для обучения на продвинутом онлайн-интенсиве «[Создание веб-интерфейсов с помощью HTML и CSS](https://htmlacademy.ru/advanced_intensive)» от [HTML Academy](https://htmlacademy.ru)._
+<h3>TECHNOLOGIES AND TOOLS</h3>
+<ul>
+  <li>JS</li>
+  <li>Grunt</li>
+  <li>LESS</li>
+  <li>Responsive design</li>
+  <li>Flexbox</li>
+  <li>Retina images</li>
+  <li>BEM</li>
+  <li>SVG sprite</li>
+</ul>
